@@ -1,0 +1,22 @@
+{% if deals %}
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Название</th>
+			<th>Сумма</th>
+		</tr>
+		{% for deal in deals %}
+		<tr>
+			<td>{{ deal.ID }}</td>
+			<td>{{ deal.TITLE }}</td>
+			<td>{{ deal.OPPORTUNITY }}</td>
+		</tr>
+		{% endfor %}
+
+		------------------------------------
+		{{deals}}
+		------------------------------------
+	</table>
+{% else %}
+	<p>Сделки не найдены.</p>
+{% endif %}
