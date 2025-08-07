@@ -16,7 +16,7 @@ SECRET_KEY = 'UxWXNk8hFEJYUkstPtBdtNgvqKfOFbME'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.ngrok-free.app', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',

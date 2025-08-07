@@ -43,5 +43,5 @@ def get_last_deals(request):
         deal["DATE_CREATE"] = dt.strftime("%d.%m.%Y %H:%M")
 
     # Рендерим шаблон с данными
-    return render(request, 'tabs/last_active_deals.html', {'deals': deals})
+    return render(request, 'tabs/first_project/last_active_deals.html', {'deals': deals})
 
